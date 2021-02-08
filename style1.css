@@ -1,0 +1,18 @@
+body{
+    background-color: blueviolet;
+    color:white
+}
+
+.weightName{
+    font-weight: 900;
+    text-align: center;
+}
+
+.city{
+    font-style: italic;
+}
+
+.underlineAddress
+{
+    text-decoration: underline;
+}
