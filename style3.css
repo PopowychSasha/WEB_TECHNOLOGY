@@ -1,0 +1,27 @@
+.mainTableCaption
+{
+    margin-left: 0px;
+}
+
+.tableAboutLessons
+{
+    border:1px solid blue;
+    background-color: #00b9de;
+}
+
+td{
+    border:1px solid blue; 
+}
+
+th{
+    border:1px solid blue; 
+}
+
+tr{
+    border:1px solid blue; 
+}
+
+.mainTitle
+{
+    text-align: center;
+}
