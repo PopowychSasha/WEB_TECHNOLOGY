@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Стилізую шапку сайту */
+.container
+{
+    width:1140px ;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    transition: 0.5s all;
+
+}
+
+.title
+{
+    display: flex;
+    justify-content: space-around;
+    background: #000;
+    min-height: 100px;
+    padding-top: 20px;
+    transition: 1s all;
+    margin-top: 20px;
+    border-radius:10px;
+}
+
+.title .titlePicture img{
+    border:1px solid silver;
+    border-radius: 10px;
+}
+
+.title:hover{
+    background: slategrey;
+}
+h1:hover
+{
+    color:black;
+}
+
+/* Стилізація головного контенту*/
+
+.mainContent
+{
+    margin-top: 50px;
+    display: flex;
+}
+
+/* Стилізація меню сайта */
+
+.leltColumnOfSite
+{
+    background: #8e9998;
+    min-width:15%;
+    padding: 5px;
+    margin-right: 10px;
+}
+.mainContent  li{
+    list-style-type: none;
+    color:black;
+    margin-top: 150px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.menu{
+    display: fixed;
+    background: red;
+}
+.mainContent a{
+    text-decoration: none;
+    transition: 2s all;
+}
+
+.mainContent a:hover{
+    font-size: 20px;
+    font-style: italic;
+}
+.mainContent .logo
+{
+    display: block;
+    margin: auto;
+    font-size: 35px;
+    margin-left: 15px;
+    font-style: italic;
+    margin-top: 30px;
+    color:white;
+}
+
+/* Стилізую текстову інформація на web сайті */
+
+.textInformationOnWebSite
+{
+    width:60%;
+    padding: 20px;
+}
+
+/* Стиілзую праву частину сайта */
+
+
+.sideBarAndFooter
+{
+    width:25%;
+    background: white;
+    margin-left: 100px;
+}
+
+.topPictureInSideBar ,.middlePictureInSideBar ,.belongPictureInSideBar 
+{
+    border: 1px solid silver;
+    margin: auto;
+    display: block;
+    margin:auto;
+    margin-top: 150px;
+    margin-right: 20px;
+}
+
+.topPictureInSideBar div,.middlePictureInSideBar div,.belongPictureInSideBar div
+{
+    margin: auto;
+    margin-left:20px;
+}
+
+.sideBarAndFooter aside
+{
+    margin-bottom:100px;
+}
+
+footer
+{
+    color:black;
+    font-size: 40px;
+}
+
+.sideBarAndFooter .whiteSpace
+{
+    width:100%;
+    height:100px;
+    background: white;
+}
+
+.pictureMenu
+{
+    display: flex;
+}
+
+.pictureMenu li
+{
+    margin-right: 35px ;
+}
+
+.footerWrapper
+{
+    padding-top:300px;
+}
