@@ -8,20 +8,21 @@ const ziro = document.querySelector('.col-6');
 let result = 0;
 
 
+
 let isDigitPress = false;
-let laterOperation = "";
 
 let expression = '';
+const e = 2.7182818284;
 
 btns[0].addEventListener('click',()=>{
     console.log("C");
     answer.innerHTML = "";
+    row.innerHTML = "";
     expression='';
-    row.innerHTML = '';
+
 })
 
 btns[1].addEventListener('click',()=>{
-    console.log(laterOperation);
     answer.innerHTML = "";
     row.innerHTML = '';
 })
@@ -46,7 +47,6 @@ btns[4].addEventListener('click',()=>{
     expression+='7';
     row.innerHTML = expression;
     answer.innerHTML = "=" + eval(expression);
-
 })
 
 btns[5].addEventListener('click',()=>{
@@ -145,26 +145,68 @@ btns[16].addEventListener('click',()=>{
 btns[17].addEventListener('click',()=>{
     console.log("√");
     answer.innerHTML = "√";
+
+    let number = prompt("Введіть число якого хочете знайти корінь");
+
+    let result = Math.sqrt(number);
+    result+="";
+    expression+=result;
+    answer.innerHTML = "=" + eval(expression);
+
 })
 
 btns[18].addEventListener('click',()=>{
     console.log("e");
-    answer.innerHTML = "e";
+    expression+='2.718';
+    row.innerHTML = expression;
+    answer.innerHTML = "=" + eval(expression);
 })
 
 btns[19].addEventListener('click',()=>{
     console.log("^");
     answer.innerHTML = "^";
+
+    let number = prompt("Введіть число");
+    let stepin = prompt("Введіть степінь числа");
+
+    let result = Math.pow(Number(number),Number(stepin));
+    result+="";
+    expression+=result;
+    answer.innerHTML = "=" + eval(expression);
 })
 
 btns[20].addEventListener('click',()=>{
+    let sinExcpression = prompt("Синус якого кути ви хочете знайти?");
+
+    let result = eval(sinExcpression);
+
+    result = Math.sin(+result*(3.145/180)).toPrecision(3);
+
     console.log("sin");
-    answer.innerHTML = "sin";
+    expression+=result;
+    row.innerHTML = expression;
+    answer.innerHTML = "=" + eval(expression);
+
+    console.log(Math.sin(30*(3.14/180)));
+console.log(Math.cos(30*(3.14/180)));
 })
 
 btns[21].addEventListener('click',()=>{
     console.log("cos");
     answer.innerHTML = "cos";
+
+    let sinExcpression = prompt("Косинус якого кути ви хочете знайти?");
+    let result = eval(+sinExcpression);
+
+    result = Math.cos(+result*(3.145/180)).toPrecision(3);
+
+    console.log("cos");
+    expression+=result;
+    row.innerHTML = expression;
+    answer.innerHTML = "=" + eval(expression);
+
+    console.log(Math.sin(30*(3.14/180)));
+console.log(Math.cos(30*(3.14/180)));
 })
 
 btns[22].addEventListener('click',()=>{
@@ -181,16 +223,6 @@ btns[23].addEventListener('click',()=>{
     expression+=')';
     row.innerHTML = expression;
     answer.innerHTML = "=" + eval(expression);
-})
-
-btns[24].addEventListener('click',()=>{
-    console.log("ln");
-    answer.innerHTML = "ln";
-})
-
-btns[25].addEventListener('click',()=>{
-    console.log("^2");
-    answer.innerHTML = "^2";
 })
 
 ziro.addEventListener('click',()=>{
