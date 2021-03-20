@@ -1,6 +1,65 @@
-.answer{
-    width: 200px;
-    height: 50px;
-    background: #000;
-    color:antiquewhite;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* Стилізація головної кнопки */
+
+.buttonForInputData
+{
+    display: block;
+    margin: auto;
+    height: 40px;
+    color: white;
+    background: #000;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+/* Стилізація модального вікна */
+.modal
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: none;
+    padding:  150px 610px;
+    position: fixed;
+    
+}
+
+.modalContent{
+    background: darkgrey;
+    width: 300px;
+    padding: 20px;
+    border-radius:20px;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.employeeForm
+{
+    display: flex;
+}
+
+.modal .modalContent .closerModalWindow
+{
+    float: right;
+    margin-left:10px;
+    cursor: pointer;
+}
+
+/* Стилізація вікна для результату */
+
+.modalResponse , .textResponse{
+    display: block;
+    margin: auto;
+    background: red;
+    width: 50%;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    min-height: 30px;
+}
+
